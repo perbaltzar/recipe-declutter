@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: recipe-scraper
+    env: node
+    plan: free
+    repo: https://github.com/perbaltzar/recipe-declutter
+    rootDir: apps/scraper
+    buildCommand: pnpm install && install:browsers && pnpm build
+    startCommand: pnpm start
+    envVars:
+      - key: NODE_ENV
+        value: production

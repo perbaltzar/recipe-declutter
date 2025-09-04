@@ -13,7 +13,7 @@ app.post("/scrape", async (c) => {
 
 serve({
   fetch: app.fetch,
-  port: 4000, // <— this is the port
+  port: 4000,
 });
 
 console.log("Server is running on http://localhost:4000");
