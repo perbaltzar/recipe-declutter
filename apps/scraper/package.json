@@ -8,15 +8,19 @@
   "license": "ISC",
   "packageManager": "pnpm@10.15.1",
   "scripts": {
-    "dev": "echo \"hej\"",
+    "dev": "tsx ./src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "postinstall": "pnpm exec playwright install"
   },
   "dependencies": {
     "@hono/node-server": "^1.19.1",
-    "hono": "^4.9.6"
+    "he": "^1.2.0",
+    "hono": "^4.9.6",
+    "playwright": "^1.55.0"
   },
   "devDependencies": {
+    "@types/he": "^1.2.3",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   }
