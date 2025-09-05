@@ -1,6 +1,4 @@
-"use server";
-
-import { Browser, chromium, Page } from "playwright";
+import { type Browser, chromium, type Page } from "playwright";
 import he from "he";
 import {
   convertTime,
@@ -8,16 +6,16 @@ import {
   findGraphObjectWithRecipeData,
   generateStringArray,
   getErrorMessage,
-  GetScrapedRecipeResponse,
-  GraphObject,
-  HowToSection,
-  HowToStep,
-  Ingredient,
+  type GetScrapedRecipeResponse,
+  type GraphObject,
+  type HowToSection,
+  type HowToStep,
+  type Ingredient,
   isValidUrl,
-  RawRecipeData,
-  ScrapedInstruction,
-  SectionInstruction,
-} from "./utils";
+  type RawRecipeData,
+  type ScrapedInstruction,
+  type SectionInstruction,
+} from "./utils/utils.js";
 
 export const getScrapedRecipe = async (
   url: string

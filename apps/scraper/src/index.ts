@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
-import { getScrapedRecipe } from "./scraper";
+import { getScrapedRecipe } from "./scraper.js";
 
 const app = new Hono();
 
@@ -16,4 +16,4 @@ serve({
   port: 4000,
 });
 
-console.log("Server is running on http://localhost:4000");
+console.log("Server is up and running");

@@ -5,8 +5,8 @@ services:
     plan: free
     repo: https://github.com/perbaltzar/recipe-declutter
     rootDir: apps/scraper
-    buildCommand: pnpm install && install:browsers && pnpm build
-    startCommand: pnpm start
+    buildCommand: pnpm --filter ./apps/scraper install && pnpm --filter ./apps/scraper build
+    startCommand: pnpm --filter ./apps/scraper start
     envVars:
       - key: NODE_ENV
         value: production
