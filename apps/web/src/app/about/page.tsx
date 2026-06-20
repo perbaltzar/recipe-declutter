@@ -14,7 +14,7 @@ export default function About() {
     <Center>
       <Stack mb="4rem" maw={"60ch"}>
         <Stack mt={"xl"}>
-          <Title ta="center">About us</Title>
+          <Title ta="center">About us!!</Title>
           <Text>
             Welcome to <strong>Savorly</strong>—the ultimate solution for home
             cooks who’ve had enough of endless scrolling, pop-up ads, and life
