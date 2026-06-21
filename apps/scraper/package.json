@@ -17,12 +17,12 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.1",
+    "@types/he": "^1.2.3",
     "he": "^1.2.0",
     "hono": "^4.9.6",
     "playwright": "^1.55.0"
   },
   "devDependencies": {
-    "@types/he": "^1.2.3",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   }
