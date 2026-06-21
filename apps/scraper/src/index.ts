@@ -1,8 +1,11 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
 import { getScrapedRecipe } from "./scraper.js";
+import { cors } from "hono/cors";
 
 const app = new Hono();
+
+app.use("*", cors());
 
 app.get("/", (c) => c.text("Hello Hono!"));
 app.post("/scrape", async (c) => {
